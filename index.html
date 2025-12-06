@@ -102,6 +102,22 @@
 <footer class="footer">
     © 2025 EcoFriendly Realtors. All Rights Reserved.
 </footer>
+<script>
 
+let heading = document.getElementsByClassName("hero-content")[0].getElementsByTagName("h1")[0];
+
+let originalText = "Your Eco-Friendly Real Estate Partner";
+let hoverText = "Go Green. Live Better.";
+
+heading.onmouseover = () => {
+    heading.innerHTML = hoverText;
+};
+
+
+heading.onmouseout = () => {
+    heading.innerHTML = originalText;
+};
+
+</script>
 </body>
 </html>
